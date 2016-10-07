@@ -1,0 +1,8 @@
+.form-group {
+  width: 400;
+}
+
+#jumbotron h1,
+#jumbotron p {
+  text-align: center;
+}

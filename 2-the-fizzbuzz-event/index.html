@@ -1,10 +1,54 @@
+
 <html>
   <head>
     <title>FizzBuzz</title>
+    <link rel='stylesheet' type='text/css' href='bootstrap-3.3.7-dist-paper/css/bootstrap.min.css'>
   </head>
   <body>
-    <h1>FizzBuzz</h1>
+    <br>
+    <div class = 'jumbotron'>
+      <h1>FizzBuzz</h1>
+      <p>This is a FizzBuzz converter written for the Web Apps 2 class.</p>
+    </div>
     <!--ANY DOM ELEMENTS YOU MAKE HERE  -->
+    <div class='form'>
+    <div class="form-group" id="single">
+      <h3>Single Number: </h3>
+      <div class="input-group">
+        <input type="number" class="form-control" id="singleInput" placeholder="Number to check"/>
+        <span class='input-group-btn'>
+          <button class="btn btn-primary" id="singleButton">Go</button>
+        </span>
+      </div>
+      <p class='lead' id="singleOutput"></p>
+    </div>
+    <br/>
+    <div class="form-group" id="upTo">
+      <h3>Up to a Number: </h3>
+      <div class='input-group'>
+        <input type="number" class="form-control" id="upToInput" placeholder="Number to go up to"/>
+        <span class='input-group-btn'>
+          <button class="btn btn-primary" id="upToButton">Go</button>
+        </span>
+      </div>
+      <p class='lead' id="upToOutput"></p>
+    </div>
+    <br/>
+    <div class="form-inline" id="addValue">
+      <h3>Add Value: </h3>
+      <input type='text' class="form-control" id='addValueName' placeholder='Name'/>
+      <div class='input-group'>
+        <input type='number' class="form-control" id='addValueNumber' placeholder='Number'/>
+        <span class='input-group-btn'>
+          <button href="#" class="btn btn-primary" id='addValueButton'>Go</button>
+        </span>
+      </div>
+    </div>
+    </div>
+    <p class='lead' id='values'>Fizz: 3<br/>Buzz: 5</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
   </body>
 </html>
