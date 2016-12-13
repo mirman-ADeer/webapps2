@@ -1,1 +1,24 @@
-{"data":[{"id":1,"text":"Get milk","completed":false},{"id":2,"text":"Shave the dog","completed":false},{"id":3,"text":"Annihilate the universe","completed":false},{"id":4,"text":"Think of more todos","completed":false},{"text":"make a new todo","completed":false,"id":5}],"lastId":5}
+{
+    "data": [{
+        "id": 1,
+        "text": "Get milk",
+        "completed": false
+    }, {
+        "id": 2,
+        "text": "Shave the dog",
+        "completed": false
+    }, {
+        "id": 3,
+        "text": "Annihilate the universe",
+        "completed": false
+    }, {
+        "id": 4,
+        "text": "Think of more todos",
+        "completed": false
+    }, {
+        "text": "make a new todo",
+        "completed": true,
+        "id": 5
+    }],
+    "lastId": 5
+}
