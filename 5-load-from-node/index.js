@@ -9,6 +9,8 @@ const app = express();
 
 app.use(bodyParser.json());
 
+app.use(express.static(__dirname + '/public'));
+
 function loadTodos(callback) {
     return fs.readFile("./todos.json", (err, data) => {
         if (err) throw err;
