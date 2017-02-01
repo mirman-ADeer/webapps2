@@ -1,13 +1,32 @@
 <html>
   <head>
     <title>Our Todos App</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
     <link rel="stylesheet" type="text/css" href="assets/css/main.min.css" />
   </head>
   <body>
-    <h1>Our Todos</h1>
-    <div id="root">
+    <div class="container">
+      <h1>Our Todos</h1>
+      <div class="row">
+        <form class="card col s12 m5" id="root">
 
+        </form>
+        <span class="col m1"></span>
+        <form class="card col s12 m6" id="new-todo">
+
+        </form>
+      </div>
     </div>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <script src="assets/js/bundle.js"></script>
   </body>
 </html>
