@@ -1,5 +1,5 @@
 import $ from "jquery";
-import getTodos from "./actions"
+import {getTodos} from "./actions"
 
 $(document).ready( () => {
   getTodos([]);

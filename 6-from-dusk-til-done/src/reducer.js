@@ -1,7 +1,10 @@
 import $ from "jquery"
+import todoListItem from "./todoListItem"
+import newTodoForm from "./newTodoForm"
 
 function updateTodos(todos) {
   $("#root").empty();
+  $("#new-todo").empty();
   todos.forEach((todo) => {
     $("#root").append(todoListItem(todo));
   });
@@ -20,10 +23,10 @@ export default function reducer(state, action) {
           method: "GET"
         }
       )
-      .done( (data) => {
+      .done( (res) => {
         console.log("Success!");
-        updateTodos(data);
-        return data;
+        updateTodos(res);
+        return res;
       })
       .fail( () => {
         console.error("Something bad happened");
@@ -36,7 +39,7 @@ export default function reducer(state, action) {
         contentType: "application/json"
       })
       .done((res) => {
-        updateTodos(data);
+        updateTodos(res);
         return res;
       })
     case "ADD_TODO":
@@ -49,7 +52,7 @@ export default function reducer(state, action) {
         }
       )
       .done((res) => {
-        updateTodos(data);
+        updateTodos(res);
         return res;
       });
     case "UPDATE_TODO":
@@ -60,7 +63,6 @@ export default function reducer(state, action) {
         data: JSON.stringify(action.updatedTodo)
       })
       .done((res) => {
-        updateTodos(res);
         return res;
       })
     default:

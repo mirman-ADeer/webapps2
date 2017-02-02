@@ -21,9 +21,10 @@ export function deleteTodo(state, id) {
   });
 }
 
-export function updateTodo(state, updatedTodo) {
-  return reducter(state, {
-    type: "DELETE_TODO",
+export function updateTodo(state, id, updatedTodo) {
+  return reducer(state, {
+    type: "UPDATE_TODO",
+    id,
     updatedTodo
   });
 }

@@ -1,6 +1,6 @@
 import $ from "jquery";
 
-import addTodo from "./actions";
+import {addTodo} from "./actions";
 
 export default function newTodoForm() {
   return $(document.createElement("form"))
@@ -21,7 +21,7 @@ export default function newTodoForm() {
   .append(
     $(document.createElement("button"))
     .attr("id","add-new-todo")
-    .addClass("waves-effect waves-light btn")
+    .addClass("btn")
     .text("Add")
     .click((e) => {
       e.preventDefault();

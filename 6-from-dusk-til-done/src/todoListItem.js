@@ -1,6 +1,5 @@
 import $ from "jquery";
-import deleteTodo from "./actions";
-import updateTodo from "./actions";
+import {deleteTodo,updateTodo} from "./actions";
 
 export default function todoListItem(todo) {
   return $(document.createElement("div"))
