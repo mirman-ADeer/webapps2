@@ -4,13 +4,9 @@ import newTodoForm from "./newTodoForm"
 
 function updateTodos(todos) {
   $("#root").empty();
-  $("#new-todo").empty();
   todos.forEach((todo) => {
     $("#root").append(todoListItem(todo));
   });
-  $("#new-todo").append(
-    newTodoForm()
-  );
 }
 
 

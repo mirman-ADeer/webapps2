@@ -21,7 +21,7 @@ export default function newTodoForm() {
   .append(
     $(document.createElement("button"))
     .attr("id","add-new-todo")
-    .addClass("btn")
+    .addClass("btn waves-effect waves-light")
     .text("Add")
     .click((e) => {
       e.preventDefault();
